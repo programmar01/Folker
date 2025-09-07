@@ -1,0 +1,50 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #38393c;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 10rem; /* spacing between boxes */
+}
+
+/* Box styling */
+.box {
+  width: 180px;
+  height: 100px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #374151; /* dark gray */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 📱 Responsive for smaller screens */
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column; /* stack vertically */
+    gap: 2rem; /* reduce gap for vertical layout */
+    align-items: center;
+  }
+
+  .box {
+     /* responsive width */
+    max-width: 100px; /* don’t let it get too wide */
+    height: 20px;
+  }
+}
