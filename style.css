@@ -13,6 +13,8 @@ body {
   align-items: center;
   background-color: #38393c;
   font-family: Arial, sans-serif;
+  flex-direction: column;
+  gap: 13rem;
 }
 
 .container {
@@ -24,19 +26,28 @@ body {
 .box {
   width: 250px;
   height: 150px;
-  background: white;
+  background: rgb(0, 0, 0);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
   font-weight: bold;
-  color: #374151; /* dark gray */
+  color: #ffffff; /* dark gray */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.contactinfo{
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 /* 📱 Responsive for smaller screens */
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  body{
+    background-image: url("./folk.jpg");
+  }
   .container {
     flex-direction: column; /* stack vertically */
     gap: 2rem; /* reduce gap for vertical layout */
@@ -47,6 +58,19 @@ body {
      /* responsive width */
     max-width: 150px; /* don’t let it get too wide */
     height: 50px;
+  }
+  .phoneNumbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+  }
+    .phoneNames{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
   }
 }
 
