@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -21,8 +22,8 @@ body {
 
 /* Box styling */
 .box {
-  width: 180px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   background: white;
   border-radius: 5px;
   display: flex;
@@ -44,7 +45,8 @@ body {
 
   .box {
      /* responsive width */
-    max-width: 100px; /* don’t let it get too wide */
-    height: 20px;
+    max-width: 150px; /* don’t let it get too wide */
+    height: 50px;
   }
 }
+
